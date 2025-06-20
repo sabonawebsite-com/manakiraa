@@ -1,0 +1,101 @@
+
+
+
+
+[
+    {
+        "title": "Sabona Marara",
+        "place": "amboo",
+        "description": "Magaalaa amboo keessatti kan argamuu kutaa 2 kan qabuu",
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEf561jxbihQroDJzciwAav7Pwn8I0MU2jXw&s",
+        "price": 1000,
+        "phone":"0928629040"
+    },
+    {
+        "title": "Gadisaa Abara",
+        "place": "finchaa",
+        "description": "Magaalaa finchaa keessatti argamuu kutaa 2 kan qabuu",
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYxDVreRl_fVzi0CKwwmPvIsRidR6ZXXf0Jw&s",
+        "price": 133,
+        "phone":"0928629640"
+    },
+    {
+        "title": "Etafaa Tarikuu",
+        "place": "burayu",
+        "description": "Magaalaa buree keessatti argamuu kutaa 2 kan qabuu",
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm7Rgn1qYPqG2FnWAnjpr8TUz8ENzCVQhbIg&s",
+        "price": 156,
+        "phone":"0928629040"
+    },
+    {
+        "title": "Guyyoo Gadaa",
+        "place": "yabello",
+        "description": "yabellotti kan argamu kutaa  5 kan qabuu",
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTpkEHrpweINZF3DAzEGNsmVVTgLVenpL0Xg&s",
+        "price": 4000,
+        "phone":"0928629045"
+    },
+    {
+        "title": "Sabona Marara",
+        "place": "amboo",
+        "description": "Magaalaa amboo keessatti argamuu kutaa 2 kan qabuu",
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRci3XkpwlHu1150RK9V8xgXY9eQ1jQM5MH1g&s",
+        "price": 1000,
+        "phone":"0928629040"
+    },
+    {
+        "title": "Gadisaa Abara",
+        "place": "finchaa",
+        "description": "Magaalaa finchaa keessatti kan argamuu kutaa 2 kan qabuu",
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQJX88dpPPWEzNQQMl4eL4_DBN_lJDjPF6dA&s",
+        "price": 1600,
+        "phone":"0928629640"
+    },
+    {
+        "title": "Etafaa Tarikuu",
+        "place": "burayu",
+        "description": "Magaalaa burayu keessatti kan argamuu kutaa 4 kan qabuu",
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTROwIJhfzmA43LJ3swhOr6GfxvpueRzd1woQ&s",
+        "price": 2000,
+        "phone":"0928629040"
+    },
+    {
+        "title": "Guyyoo Gadaa",
+        "place": "yabello",
+        "description": "yabellotti kan argamu kutaa cisicha 3 kan qabuu",
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6CmhaNqX-5JPZqwdasTizMOupXeMmHD5xug&s",
+        "price": 1800,
+        "phone":"0928629045"
+    },
+    {
+        "title": "Gadisaa Abara",
+        "place": "Shanbuu",
+        "description": "yabellotti kan argamu kutaa cisicha 4 kan qabuu",
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPsk1ZHuqIynmaxSWIsoWhOd5fG10fGkr3Ig&s",
+        "price": 1500,
+        "phone":"0928629111"
+    },
+    {
+        "title": "Usman badhasa",
+        "place": "Arsii",
+        "description": "Arsii tti kan argamu kutaa cisicha 2 kan qabuu",
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPaOi2pvea-W0vG0jaCs_MHOMLWpmfCKG1DQ&s",
+        "price": 1800,
+        "phone":"0928629045"
+    },
+    {
+        "title": "Esaayas Abdi",
+        "place": "Asallaa",
+        "description": "Asallaa tti kan argamu kutaa cisicha 4 kan qabuu",
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLyagfJY6ShlTQ262pQE-FYv9u8KOVkD04eg&s",
+        "price": 2000,
+        "phone":"0928629035"
+    },   {
+        "title": "Tata Shibashii",
+        "place": "Konboshaa",
+        "description": "konbosha tti kan argamu kutaa cisicha 4 kan qabuu",
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLyagfJY6ShlTQ262pQE-FYv9u8KOVkD04eg&s",
+        "price": 2000,
+        "phone":"0928629035"
+    }
+]

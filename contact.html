@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaada</title>
+</head>
+<style>
+/* Basic reset for margin and padding */  
+body, h1, h2, h3, p {  
+    margin: 0;  
+    padding: 0;  
+}  
+
+/* Setting up the form container */  
+.form-contener {  
+    max-width: 400px; /* Define a max width for the form */  
+    margin: 20px auto; /* Center the form */  
+    padding: 20px; /* Padding inside the form */  
+    border: 1px solid #ccc; /* Light border */  
+    border-radius: 8px; /* Rounded corners */  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Box shadow */  
+    background-color: #f9f9f9; /* Light background color */  
+}  
+
+  
+label {  
+    display: block;  
+    margin-bottom: 5px;   
+    font-weight: bold; 
+}  
+
+  
+input[type="text"],  
+input[type="email"],  
+textarea {  
+    width: 100%; 
+    padding: 10px;   
+    border: 1px solid #ccc;  
+    border-radius: 4px;   
+    margin-bottom: 15px;   
+    font-size: 16px; 
+}  
+
+ 
+textarea {  
+    min-height: 100px;  
+    resize: vertical;   
+}  
+
+  
+.form-button {  
+    background-color: #4CAF50; 
+    color: white;  
+    padding: 10px 15px; 
+    border: none;
+    border-radius: 4px;  
+    cursor: pointer;  
+    font-size: 16px;   
+}  
+  
+.form-button:hover {  
+    background-color: #45a049;   
+}  
+ 
+#result {  
+    margin-top: 15px; 
+    font-size: 16px;  
+    color: #ff0000;   
+    display: none;  
+} 
+</style> 
+<body>
+    <form class="form-contener" method="POST" id="form">
+        <input class="" type="hidden" name="access_key" value="fb157278-c020-42dd-bd36-1f503b4fd21b">
+        <label for="name">Your Full Name</label><br>
+        <input class="name-user " type="text" name="name" required placeholder="Your Name"><br><br>
+        <label for="email">Your Email</label><br>
+        <input class="you-email" type="email" name="email" required placeholder="Your Email"><br><br>
+        <label for="comment">Comment</label><br>
+        <textarea class="form-text" name="message" required placeholder="comment"></textarea><br><br>
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <button class="form-button" type="submit">Send➡️</button>
+        <div id="result"></div>
+      </form>
+      <script>
+        const form = document.getElementById('form');
+        const result = document.getElementById('result');
+    
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const formData = new FormData(form);
+          const object = Object.fromEntries(formData);
+          const json = JSON.stringify(object);
+          result.innerHTML = "Please wait..."
+    
+          fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: json
+          })
+            .then(async (response) => {
+              let json = await response.json();
+              if (response.status == 200) {
+                result.innerHTML = "Galmofteeta✔️";
+              } else {
+                console.log(response);
+                result.innerHTML = json.message;
+              }
+            })
+            .catch(error => {
+              console.log(error);
+              result.innerHTML = "Rakkon jira irra debi'ii!";
+            })
+            .then(function () {
+              form.reset();
+              setTimeout(() => {
+                result.style.display = "none";
+              }, 3000);
+            });
+        });
+      </script>
+</body>
+</html>
